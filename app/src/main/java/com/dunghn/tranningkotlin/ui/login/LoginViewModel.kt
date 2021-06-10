@@ -7,17 +7,13 @@ import androidx.lifecycle.ViewModel
 import com.dunghn.tranningkotlin.util.Event
 
 class LoginViewModel : ViewModel() {
-
     var inputEmail = MutableLiveData<String>()
-
-
     var inputPassword = MutableLiveData<String>()
     private val statusMessage = MutableLiveData<Event<String>>()
     val message: LiveData<Event<String>>
         get() = statusMessage
 
     fun onLogin() {
-        statusMessage.value = Event("fdsgsgdfgdgd")
         if (inputEmail.value == null) {
             statusMessage.value = Event("Please enter email")
         } else if (inputPassword == null) {

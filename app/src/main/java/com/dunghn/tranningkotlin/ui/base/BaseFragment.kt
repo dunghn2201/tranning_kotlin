@@ -10,16 +10,17 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
-abstract class BaseFragment<VM : ViewModel, B : ViewDataBinding> : Fragment() {
-     lateinit var binding: B
-     lateinit var viewModel: VM
-    abstract fun getLayoutId(): Int
+abstract class BaseFragment<VM : ViewModel, B : ViewDataBinding>(private val layoutID: Int) :
+    Fragment(layoutID) {
+    lateinit var binding: B
+    lateinit var viewModel: VM
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false)
+        binding = DataBindingUtil.inflate(inflater, layoutID, container, false)
         viewModel = ViewModelProvider(this).get(getViewModel())
         return binding.root
     }
@@ -31,6 +32,5 @@ abstract class BaseFragment<VM : ViewModel, B : ViewDataBinding> : Fragment() {
         }
     }
 
-    fun getDataBinding() = binding
     abstract fun getViewModel(): Class<VM>
 }
