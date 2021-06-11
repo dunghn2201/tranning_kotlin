@@ -13,4 +13,20 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.Edittext" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="background">@color/edittextBackground</item>
+    </style>
+
+    <style name="Theme.Button" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
+        <item name="backgroundTint">@color/primaryBackground</item>
+    </style>
 </resources>
