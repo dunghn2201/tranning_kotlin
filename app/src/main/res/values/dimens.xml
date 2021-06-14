@@ -10,4 +10,8 @@
     <dimen name="marginBottom_banner">30dp</dimen>
     <dimen name="marginTop_txt_username">306dp</dimen>
     <dimen name="marginTop_btn_logout">15dp</dimen>
+    <dimen name="margin_top_progressbar">396dp</dimen>
+    <dimen name="margin_bottom_progressbar">287dp</dimen>
+    <dimen name="margin_top_txt_go_sign_up">20dp</dimen>
+    <dimen name="margin_end_txt_header">20dp</dimen>
 </resources>

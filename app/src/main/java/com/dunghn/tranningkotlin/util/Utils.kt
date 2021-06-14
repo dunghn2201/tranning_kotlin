@@ -1,11 +1,12 @@
 package com.dunghn.tranningkotlin.util
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import com.dunghn.tranningkotlin.data.network.Resource
-import com.dunghn.tranningkotlin.ui.auth.login.LoginFragment
 import com.dunghn.tranningkotlin.ui.base.BaseFragment
 import com.google.android.material.snackbar.Snackbar
 
@@ -45,10 +46,8 @@ fun Fragment.handleApiError(
             retry
         )
         failure.errorCode == 401 -> {
-            if (this is LoginFragment) {
-                requireView().snackbar("You've entered incorrect email or password")
-            } else {
-                (this as BaseFragment<*,*,*>).logout()
+            if (this is BaseFragment<*, *, *>) {
+                logout()
             }
         }
         else -> {
@@ -56,4 +55,17 @@ fun Fragment.handleApiError(
             requireView().snackbar(error)
         }
     }
+}
+
+fun Fragment.hideKeyboard() {
+    view?.let { activity?.hideKeyboard(it) }
+}
+
+fun Activity.hideKeyboard() {
+    hideKeyboard(currentFocus ?: View(this))
+}
+
+fun Context.hideKeyboard(view: View) {
+    val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+    inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
 }

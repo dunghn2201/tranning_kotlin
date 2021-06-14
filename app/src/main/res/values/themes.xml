@@ -3,7 +3,7 @@
     <style name="Theme.TranningKotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/primaryBackground</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -14,19 +14,18 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Edittext" parent="TextAppearance.AppCompat">
-        <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:ems">10</item>
-        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
-        <item name="android:paddingLeft">10dp</item>
-        <item name="background">@color/edittextBackground</item>
+    <style name="CustomEdittext">
+        <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="Theme.Button" parent="TextAppearance.AppCompat">
-        <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:paddingVertical" tools:targetApi="o">15dp</item>
-        <item name="backgroundTint">@color/primaryBackground</item>
+    <style name="CustomButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="CustomText">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

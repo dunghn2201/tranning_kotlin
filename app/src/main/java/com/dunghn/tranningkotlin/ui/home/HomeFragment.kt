@@ -37,7 +37,6 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding, UserReposi
             when (it) {
                 is Resource.Success -> {
                     binding.progressBar2.visible(false)
-
                     updateUI(it.value.result)
                 }
                 is Resource.Loading -> {
@@ -53,7 +52,9 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding, UserReposi
 
     private fun updateUI(user: User) {
         with(binding) {
-            tvName.text = user.username
+            tvFullName.text = user.fullname
+            tvEmail.text = user.email
+            tvAddress.text = user.address
         }
     }
 

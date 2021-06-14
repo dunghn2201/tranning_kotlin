@@ -8,4 +8,8 @@
     <string name="txt_password">password</string>
     <string name="txt_username">username</string>
     <string name="txt_logout">Log out</string>
+    <string name="txt_go_sign_up">Not a member? Sign Up Now.</string>
+    <string name="txt_header_fullname">FullName:</string>
+    <string name="txt_header_email">Email:</string>
+    <string name="txt_header_address">Address:</string>
 </resources>
