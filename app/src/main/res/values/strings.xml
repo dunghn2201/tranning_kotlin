@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TranningKotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_back">Back</string>
+    <string name="txt_banner">WorkHub</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_password">password</string>
+    <string name="txt_username">username</string>
+    <string name="txt_logout">Log out</string>
+    <string name="txt_go_sign_up">Not a member? Sign Up Now.</string>
+    <string name="txt_header_fullname">FullName:</string>
+    <string name="txt_header_email">Email:</string>
+    <string name="txt_header_address">Address:</string>
+</resources>

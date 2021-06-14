@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".ui.home.HomeFragment">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    style="@style/CustomText"
+                    android:layout_marginEnd="@dimen/margin_end_txt_header"
+                    android:text="@string/txt_header_fullname" />
+
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/CustomText"
+                    android:layout_marginEnd="@dimen/margin_end_txt_header"
+                    android:text="@string/txt_header_email" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/CustomText"
+                    android:layout_marginEnd="@dimen/margin_end_txt_header"
+                    android:text="@string/txt_header_address" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:textSize="15sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_btn_logout"
+            android:text="@string/txt_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_txt_banner">30sp</dimen>
+    <dimen name="margin_horizon_login_btn">20dp</dimen>
+    <dimen name="margin_top_login_btn">20dp</dimen>
+    <dimen name="padding_verti_login_btn">10dp</dimen>
+    <dimen name="marginTop_txt_back">10dp</dimen>
+    <dimen name="marginEnd_txt_back">10dp</dimen>
+    <dimen name="marginBottom_banner">30dp</dimen>
+    <dimen name="marginTop_txt_username">306dp</dimen>
+    <dimen name="marginTop_btn_logout">15dp</dimen>
+    <dimen name="margin_top_progressbar">396dp</dimen>
+    <dimen name="margin_bottom_progressbar">287dp</dimen>
+    <dimen name="margin_top_txt_go_sign_up">20dp</dimen>
+    <dimen name="margin_end_txt_header">20dp</dimen>
+</resources>
